@@ -6,93 +6,92 @@
 
 2/15〜3/11までの分を以下にまとめ
 
-# SQL [(SQL基本)](https://96neko.notepm.jp/page/126d282a39)
+# SQL [(SQL基本)](https://github.com/instantheaven/boilerplate/blob/master/source/sql_memo01.md)
 
-○データベース
-fruitsApp
-を作成せよ。文字コードはutf8とすること。
+○データベース  
+fruitsApp  
+を作成せよ。文字コードはutf8とすること。  
+  
+CREATE DATABASE fruitsApp DEFAULT CHARACTER SET utf8  
+  
+○fruitsAppにfruitsテーブルを以下の仕様で作成せよ  
+id 整数　主キー　自動連番  
+name 可変長文字列(30) NOTNULL制約  
+price int  
+updated 日付  
+  
+CREATE TABLE fruits(  
+id INT PRIMARY KEY AUTO_INCREMENT,  
+name VARCHAR(30) NOT NULL,  
+price INT,  
+updated DATE  
+)  
+  
+○fruitsテーブルに以下の商品を登録せよ  
+みかん,100円,2020-02-12  
+ばなな,50円,2020-02-12  
+りんご,150円,2020-02-13  
+ナシ,80円,2020-02-15  
+パイン,200円,2020-02-15  
+いちご,300円,2020-02-15  
+  
+INSERT INTO fruits(name,price,updated)  
+VALUES('みかん',100,'2020-02-12'),  
+('ばなな',50,'2020-02-12'),  
+('りんご',150,'2020-02-13'),  
+('ナシ',80,'2020-02-15'),  
+('パイン',200,'2020-02-15'),  
+('いちご',300,'2020-02-15')  
+  
+○fruitsテーブルから、名前、値段の一覧を取得する。  
+SELECT name,price FROM fruits  
+  
+○fruitsテーブルに以下のデータを追加する  
+洋ナシ,220円  
+INSERT INTO fruits(name,price) VALUES('洋ナシ',220)  
+  
+○fruitsテーブルから、IDが「3]のデータを抽出する。  
+SELECT * FROM fruits WHERE id=3  
+  
+○fruitsテーブルから、登録日が2020-02-13以前のデータについて商品名の一覧を抽出する。  
+SELECT name,updated FROM fruits WHERE updated<='2020-02-13'  
+  
+○fruitsテーブルから、価格が100円以上200円以下の商品を、名前、価格、の一覧で抽出する。  
+SELECT name,price FROM fruits WHERE price>=100 AND price<=200  
+  
+○fruitsテーブルから、日付が2020-02-15でない商品を、名前、価格、の一覧で抽出する。  
+  
+SELECT name,price FROM fruits WHERE updated<>'20200215'  
+○すべての商品を10円値上げせよ。  
+UPDATE fruits SET price=price+10  
+  
+○名前にナシが含まれる商品を名前、価格、の一覧で抽出する。  
+SELECT name,price FROM fruits WHERE name LIKE '%ナシ%'  
+  
+○日付データがnullの項目を商品名の一覧で抽出する。  
+SELECT name FROM fruits WHERE updated IS NULL  
+  
+○一番高い商品の名前、価格を出力する。  
+SELECT name,price FROM fruits ORDER BY price DESC LIMIT 1  
+  
+○パインのデータを削除する。  
+DELETE FROM fruits WHERE name LIKE '%パイン%'  
+  
+○すべてのデータを*を使って一覧表示せよ  
+SELECT * FROM fruits  
+  
 
-CREATE DATABASE fruitsApp DEFAULT CHARACTER SET utf8
+**このぐらいのSQL文は書けるようになったほうがいい**  
+データベースを作るとかは見て書けたらいいけど、  
+それ以外のところはテストで鉛筆使って書くことはある  
+から、多分テスト出る  
+  
 
-○fruitsAppにfruitsテーブルを以下の仕様で作成せよ
-id 整数　主キー　自動連番
-name 可変長文字列(30) NOTNULL制約
-price int
-updated 日付
-
-CREATE TABLE fruits(
-id INT PRIMARY KEY AUTO_INCREMENT,
-name VARCHAR(30) NOT NULL,
-price INT,
-updated DATE
-)
-
-○fruitsテーブルに以下の商品を登録せよ
-みかん,100円,2020-02-12
-ばなな,50円,2020-02-12
-りんご,150円,2020-02-13
-ナシ,80円,2020-02-15
-パイン,200円,2020-02-15
-いちご,300円,2020-02-15
-
-INSERT INTO fruits(name,price,updated)
-VALUES('みかん',100,'2020-02-12'),
-('ばなな',50,'2020-02-12'),
-('りんご',150,'2020-02-13'),
-('ナシ',80,'2020-02-15'),
-('パイン',200,'2020-02-15'),
-('いちご',300,'2020-02-15')
-
-○fruitsテーブルから、名前、値段の一覧を取得する。
-SELECT name,price FROM fruits
-
-○fruitsテーブルに以下のデータを追加する
-洋ナシ,220円
-INSERT INTO fruits(name,price) VALUES('洋ナシ',220)
-
-○fruitsテーブルから、IDが「3]のデータを抽出する。
-SELECT * FROM fruits WHERE id=3
-
-○fruitsテーブルから、登録日が2020-02-13以前のデータについて商品名の一覧を抽出する。
-SELECT name,updated FROM fruits WHERE updated<='2020-02-13'
-
-○fruitsテーブルから、価格が100円以上200円以下の商品を、名前、価格、の一覧で抽出する。
-SELECT name,price FROM fruits WHERE price>=100 AND price<=200
-
-○fruitsテーブルから、日付が2020-02-15でない商品を、名前、価格、の一覧で抽出する。
-
-SELECT name,price FROM fruits WHERE updated<>'20200215'
-○すべての商品を10円値上げせよ。
-UPDATE fruits SET price=price+10
-
-○名前にナシが含まれる商品を名前、価格、の一覧で抽出する。
-SELECT name,price FROM fruits WHERE name LIKE '%ナシ%'
-
-○日付データがnullの項目を商品名の一覧で抽出する。
-SELECT name FROM fruits WHERE updated IS NULL
-
-○一番高い商品の名前、価格を出力する。
-SELECT name,price FROM fruits ORDER BY price DESC LIMIT 1
-
-○パインのデータを削除する。
-DELETE FROM fruits WHERE name LIKE '%パイン%'
-
-○すべてのデータを*を使って一覧表示せよ
-SELECT * FROM fruits
-
-```
-
-**このぐらいのSQL文は書けるようになったほうがいい**
-データベースを作るとかは見て書けたらいいけど、
-それ以外のところは**<span style="color: red; ">テスト</span>**で**鉛筆使って書く**ことはある
-から、多分テスト出る
-
-
-**name 可変長文字列(30) NOTNULL制約**
-名前なしじゃ作れない
-
-**オートインクリメント**
-最初のidを100とかにすると101から連番になる
+**name 可変長文字列(30) NOTNULL制約**  
+名前なしじゃ作れない  
+  
+**オートインクリメント**  
+最初のidを100とかにすると101から連番になる  
 
 ---
 
@@ -104,10 +103,10 @@ SELECT * FROM fruits
 | 大文字、小文字(※)を区別せず内容が等しいか調べる  | public boolean equalsIgnoreCase(String s)  |
 | 文字列長を調べる  |  public int length() |
 | 空文字か(長さが0か)を調べる  | public boolean isEmpty()  |
-
+  
 
 # 正規表現の基本文法
-正規表現がもしテスト出るとしても教科書の範囲だけで大丈夫。
+正規表現がもしテスト出るとしても教科書の範囲だけで大丈夫。  
 
 ### ①通常の文字：その文字でなければならない
 ```
@@ -167,30 +166,23 @@ s.replaceAll("[beh]","X");
 ```
 
 ---
+  
 
-
-**getter**の練習しておいたほうがいい
-また**<span style="color: red; ">テスト</span>**に出るかも
-
-**三項演算子**も**<span style="color: red; ">テスト</span>**に出そう
-**int x=xStr==null? 0:IntegerparseInt(x);**
-取得を試みてそれがnullですか？という**三項演算子**
-
-まさかの第2回テストの再問題
-**2回目のテストは見直してできるようにしておいた方が良さそう**
-
-教科書P75
-のところは**<span style="color: red; ">テスト</span>**に出来そうって話してた
-穴埋め問題で
-URLのとこが空いててとか
+**三項演算子**もテストに出そう  
+**int x=xStr==null? 0:IntegerparseInt(x);**  
+取得を試みてそれがnullですか？という**三項演算子**  
+  
+まさかの第2回テストの再問題  
+**2回目のテストは見直してできるようにしておいた方が良さそう**  
+  
 
 ## 練習2-1
 次の文章の(1)～(12)に適切な語句を入れてください
 
-　Webページを公開するには[( 1 )]というコンピュータにHTMLファイルを配置し、ブラウザを使って要求する。どの[( 1 )]のどのHTMLファイルを要求するかを指定するのに使用されるのが[( 2 )]である。
-　ブラウザが[( 1 )]に要求することを[( 3 )]という。[( 3 )]には、いくつかの方法があり、代表的なものは[( 4 )]と[( 5 )]である。また、[( 1 )]がブラウザの[( 3 )]に応えることを[( 6 )]といい、応答するデータの種類を表す[( 7 )]と処理結果を表す「ステータスコード」を、ヘッダ部を使って送信する。この[( 1 )]とブラウザのやり取りは[( 8 )]というプロトコルで決められている。
-　Webアプリケーションはブラウザで実行できるアプリケーションで、その中核となるのがサーバサイドプログラムを実行する機能(環境)を備えた、[( 9 )]というコンピュータが必要となる。特にJavaによるサーバーサイドプログラムを[( 10 )]と呼び、[( 10 )]を実行できる環境を[( 11 )]という。
-　Javaによるサーバーサイドプログラムには[( 12 )]というものがあるが、これは[( 10 )]に変換され、最終的には同じものとなる。
+　Webページを公開するには[( 1 )]というコンピュータにHTMLファイルを配置し、ブラウザを使って要求する。どの[( 1 )]のどのHTMLファイルを要求するかを指定するのに使用されるのが[( 2 )]である。  
+　ブラウザが[( 1 )]に要求することを[( 3 )]という。[( 3 )]には、いくつかの方法があり、代表的なものは[( 4 )]と[( 5 )]である。また、[( 1 )]がブラウザの[( 3 )]に応えることを[( 6 )]といい、応答するデータの種類を表す[( 7 )]と処理結果を表す「ステータスコード」を、ヘッダ部を使って送信する。この[( 1 )]とブラウザのやり取りは[( 8 )]というプロトコルで決められている。  
+　Webアプリケーションはブラウザで実行できるアプリケーションで、その中核となるのがサーバサイドプログラムを実行する機能(環境)を備えた、[( 9 )]というコンピュータが必要となる。特にJavaによるサーバーサイドプログラムを[( 10 )]と呼び、[( 10 )]を実行できる環境を[( 11 )]という。  
+　Javaによるサーバーサイドプログラムには[( 12 )]というものがあるが、これは[( 10 )]に変換され、最終的には同じものとなる。  
 
 
 **[練習2-1の解答例](https://96neko.notepm.jp/page/f54c9323e9#%E7%B7%B4%E7%BF%922-1%E3%81%AE%E8%A7%A3%E7%AD%94%E4%BE%8B)**
