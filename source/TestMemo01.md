@@ -46,7 +46,7 @@ Javaはコンストラクタがひとつも定義されてないクラスは許�
 Javaで時間を計測するには以下の方法を用いればよい  
 開始のタイミング  
 ```long start=System.currentTimeMillis();```  
-//何かしらの処理  
+```//何かしらの処理```  
   
 終了のタイミング  
 ```long end=System.currentTimeMillis();```  
@@ -227,9 +227,9 @@ interfaceのフェースをsにするひとがいるけど気を付けて　　
   
   
   
-**メンバに関するアクセス修飾の定石**　　
+**メンバに関するアクセス修飾の定石**  
 ・フィールドはすべてprivate  
-・メソッドはすべてpublic 
+・メソッドはすべてpublic  
   
 基本的には全部privateで必要なものだけpublicがいいかも  
 
