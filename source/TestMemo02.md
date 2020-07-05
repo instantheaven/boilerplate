@@ -1,14 +1,13 @@
-**<span style="color: red; ">テスト範囲</span>**
-**MySQLとサーバーサイド・データベースの接続**
-**成績考査3月12日**
+# テスト前に確認しておきたいメモ②
 
-**[前回のテスト用の確認まとめ](https://96neko.notepm.jp/page/b4d81cfb18?s=%E3%83%86%E3%82%B9%E3%83%88)**
+**MySQLとサーバーサイド・データベースの接続**
+
+**[テスト前に確認しておきたいメモ①](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo01.md)**
 
 2/15〜3/11までの分を以下にまとめ
 
 # SQL [(SQL基本)](https://96neko.notepm.jp/page/126d282a39)
 
-```KwさんとFさんのゴールドペア
 ○データベース
 fruitsApp
 を作成せよ。文字コードはutf8とすること。
