@@ -1,5 +1,7 @@
 # Python
-
+  
+  
+演算子
 ```演算子
 print(3**3) # 3の3乗
 print(10 / 3) # int割るintもちゃんと計算(jsも同じ)
@@ -9,6 +11,7 @@ print('Hello'*3) # HelloHelloHello
 print(123**300)
 ```
   
+入力と型変換
 ```入力と型変換
 m=input('何メートル?')
 cm=float(m)*100
@@ -16,6 +19,7 @@ print(type(cm))
 print('答えは'+str(cm)+'です')
 ```
   
+if文
 ```if文
 print("これから無人島でしばらく一人で生活しなくてはなりません。")
 print("好きなものを一つだけ持って行くとしたら何を持って行く？")
@@ -42,6 +46,7 @@ else:
     print("夢見がちなので、理想がとても高いでしょう。")
 ```
   
+for文
 ```for文
 n=int(input('正の整数>'))
 # print(sum(range(1,n+1)))
@@ -51,6 +56,7 @@ for i in range(1,n+1):
 print(total)
 ```
   
+random
 ```random
 import random
 print(random.randint(1,6))
@@ -59,6 +65,7 @@ time.sleep(3)
 print('Hello')
 ```
   
+競争アプリ
 ```競争アプリ
 import random
 import time
@@ -103,6 +110,7 @@ else:
 """
 ```
   
+じゃんけんアプリ
 ```じゃんけんアプリ
 import random
 n=3
@@ -126,6 +134,7 @@ for i in range(1,n+1):
 print(f'結果({n}戦) win:{win} lose:{lose} draw:{draw}')
 ```
   
+list
 ```list
 a_list=[20,35,82,50,33]
 print(a_list[0]) # ->20
@@ -139,6 +148,7 @@ for i in a_list:
 print(len(a_list)) # ->5
 ```
   
+listの操作
 ```listの操作
 points = [62, 58, 72, 60, 47, 81, 74, 65, 59, 38]
 print(f'平均点{sum(points)/len(points)}')
@@ -158,6 +168,7 @@ ls4=points[-2:]
 print(ls4) #[59,38]
 ```
   
+二次元リスト
 ```二次元リスト
 a=[
     ['田中',30,50,80],
@@ -172,6 +183,7 @@ print(a[2]) #['鈴木',80,30,60]
 print(len(a)) # 3
 ```
   
+クイズアプリ
 ```クイズアプリ
 # 三択クイズ
 # クイズデータを二次元のリストで表現 --- (*1)
@@ -202,6 +214,7 @@ for quiz in quiz_list:
     print('---')
 ```
   
+dictionary
 ```dictionary
 a_dict={'田中':48,'佐藤':78,'井上':49}
 print(a_dict['佐藤']) # 78
@@ -211,7 +224,8 @@ a_dict['佐藤']=79
 for key in a_dict:
     print(f'{key}は{a_dict[key}才')
 ```
-
+  
+dictionaryを使ったアプリ
 ```dictionaryを使ったアプリ
 import math
 # レストランのメニュー
@@ -235,7 +249,8 @@ for name,price in menu_dict.items():
     print(f'{name}:{price}->{new_price}円')
 ```
   
-```deictionaryを使ったアプリ２
+dictionaryを使ったアプリ２
+```dictionaryを使ったアプリ２
 # 今回集計するデータ --- (*1)
 s = """
 サンマ,カツオ,サンマ,サンマ,マグロ,フグ,マグロ,マグロ,マグロ,サンマ,ニシン,イワシ,サンマ,サンマ,カツオ,サンマ,カツオ,サンマ,カツオ,サンマ,マグロ,マグロ,マグロ,ニシン
@@ -262,6 +277,7 @@ for name,count in dic.items():
     print(f'{name}={count}')
 ```
   
+文字列のスライス
 ```文字列のスライス
 import math
 # abcd.....zの文字列生成
