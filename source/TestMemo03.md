@@ -2,14 +2,14 @@
 JavaScriptとPython
 成績考査6月4日
 
-**[前回のテスト用の確認まとめ](hhttps://96neko.notepm.jp/page/f54c9323e9)**
+**[前回のテスト用の確認まとめ](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo01.md)**
 
-**[前々回のテスト用の確認まとめ](https://96neko.notepm.jp/page/b4d81cfb18?s=%E3%83%86%E3%82%B9%E3%83%88)**
+**[前々回のテスト用の確認まとめ](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo02.md)**
 
 3/12〜まとめ
 
-# [Day71 JavaScript](https://joytas.net/%e8%a8%93%e7%b7%b4/day71)
-# [Day72 Python](https://joytas.net/%e8%a8%93%e7%b7%b4/day72)
+# [Day71 JavaScript](https://github.com/instantheaven/boilerplate/blob/master/source/JavaScript01.md)
+# [Day72 Python](https://github.com/instantheaven/boilerplate/blob/master/source/Python01.md)
 # [Day73 Python](https://joytas.net/%e8%a8%93%e7%b7%b4/day73)
 
 # [内包表記](https://96neko.notepm.jp/page/93c71c82a3?s=%E3%83%86%E3%82%B9%E3%83%88)
