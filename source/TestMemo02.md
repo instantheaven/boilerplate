@@ -244,7 +244,7 @@ code(コード)だから
 
 Q4を最大値を求めるメソッドとしてメモる
 
-## 乱数[(乱数の求め方)](https://notepm.jp/sharing/162f015e-4330-4333-95a4-c1e91d17b6fe)
+## 乱数[(乱数の求め方)](https://github.com/instantheaven/boilerplate/blob/master/source/random_memo01.md)
 １～５だとするなら大きいほうから小さいほうを引いて１を足したものが個数  
 
 
@@ -383,7 +383,7 @@ En code と ingで覚えるといいかもと思った
 ---
 
 
-### [練習5−1](https://96neko.notepm.jp/page/5c752cf963?s=%E3%83%86%E3%82%B9%E3%83%88#%E7%B7%B4%E7%BF%925-1)　[(練習5−1の解答)](https://96neko.notepm.jp/page/5c752cf963?s=%E3%83%86%E3%82%B9%E3%83%88#%E7%B7%B4%E7%BF%925-1%E3%81%AE%E8%A7%A3%E7%AD%94) 
+### [練習5−1](https://github.com/instantheaven/boilerplate/blob/master/source/5-1.md)　[(練習5−1の解答)](https://github.com/instantheaven/boilerplate/blob/master/source/Answer5-1.md) 
 
   
 
