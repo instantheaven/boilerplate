@@ -190,7 +190,7 @@ s.replaceAll("[beh]","X");
 ---
 
 
-**request.getParamater()**は<span style="color: red; ">絶対テストに出る</span>
+**request.getParamater()**は絶対テストに出る
 中身がなかったときはnullになる
 
 
@@ -268,14 +268,14 @@ POST通信**
 これが何通信かわからないと処理できない
 **リンクだからGET通信**
 
-**今できる<span style="color: blue; ">POST通信</span>はformからmethod="post"としたときだけ**
+**今できるPOST通信はformからmethod="post"としたときだけ**
 
 **リクエストで飛んでくるものは何を入れてもString**
 
 ## ファイルの読み書き
 ファイル読み込みの記述は暗記するだけ
-**読み込みしたい時**は**<span style="color: blue; ">fis</span>**
-**書きたい時**は**<span style="color: blue; ">fos</span>**
+**読み込みしたい時**は**fis**
+**書きたい時**は**fos**
 
 ### fis
 **FileInputStream fis=new FileInputStream("./kaikei.txt");**
@@ -294,7 +294,7 @@ br=new BufferedReader(isr);
 ```
 
 **鉛筆で書ける必要性がある**
-つまり**<span style="color: red; ">テスト</span>**に出る
+つまり**テスト**に出る
 
 ### fos
 **FileOutputStream fos=new FileOutputStream("./kaikei.txt");**
@@ -315,38 +315,38 @@ br=new BufferedReader(isr);
 
 
 サーブレットの
-**@WebServlet("<span style="color: red; ">ここ</span>")**　を**Index.html**にしたら**Index.html**を呼んでくれる
+**@WebServlet("ここ")**　を**Index.html**にしたら**Index.html**を呼んでくれる
 
 **request.getParameter()**
-は、**<span style="color: red; ">テスト</span>**に99%出てくる
+は、**テスト**に99%出てくる
 ほぼ書かされる
 サーバーサイドで値をとってくるのは重要
 
-**getParameter**だと**<span style="color: blue; ">文字列を返す</span>**
-**getAttribute**だと**Object型**、**<span style="color: blue; ">だからダウンキャスト</span>**が必要
+**getParameter**だと**文字列を返す**
+**getAttribute**だと**Object型**、**だからダウンキャスト**が必要
 
 **Implements**　とか
 **Serializable**　は
-**<span style="color: red; ">テスト</span>**で出る
+**テスト**で出る
 これが書けないとコーディングが進まない
 
 **public boolean execute(User user){}**
-**public **は、**<span style="color: blue; ">アクセス修飾子</span>**
-**boolean** は、<span style="color: blue; ">**戻り値**</span>
-これも**<span style="color: red; ">テスト</span>**で出そう
+**public **は、**アクセス修飾子**
+**boolean** は、**戻り値**  
+これも**テスト**で出そう  
 
 **HttpSession session=request.getSession();
 session.setAttribute("login",user);**
-**<span style="color: red; ">テスト</span>**に出るとしか思えない
+**テスト**に出るとしか思えない
 補完できないから**HttpSession**が書けないと
 **Attribute**も
 
 **ServletContext application=this.getServletContext();**
-**<span style="color: blue; ">アプリケーションスコープ</span>**を使うために**ServletContext**のインスタンスを作っている
+**アプリケーションスコープ**を使うために**ServletContext**のインスタンスを作っている
 acとかじゃなく**application**にしてるのはJSPで暗黙で用意されてる変数名がapplicationだから、
 同じにしている
 **ServletContext** は覚えなきゃいけない
-これも**<span style="color: red; ">テスト</span>**に出そう
+これも**テスト**に出そう
 
 **スコープは**
 **setAttribute()** で**セット**して
@@ -358,7 +358,7 @@ acとかじゃなく**application**にしてるのはJSPで暗黙で用意され
 nullなら作る
 
 **if(loginUser==null){
-response.<span style="color: blue; ">setRedirect</span>("/docoTsubu");
+response.setRedirect("/docoTsubu");
 }**
 は、ログインせずにURLの直接飛んできたときにダメとする仕組み
 URLを直接入力で来た場合、**リダイレクト**で飛ばされる
@@ -373,7 +373,7 @@ En code と ingで覚えるといいかもと思った
 
 **session.invalidate();**
 ※スコープ自体が破棄され、保存していたすべてのインスタンスが消滅する。
-これも**<span style="color: red; ">テスト</span>**に出うる
+これも**テスト**に出うる
 
 **String[] data=csv.split(",",-1);**
 -1してないときは、hoge,fuga,空文字,barだけ。末尾のカンマは無視
@@ -390,7 +390,7 @@ En code と ingで覚えるといいかもと思った
 ---
 
 
-**doPost**とか**doGet**の書き方はいざ**<span style="color: red; ">テスト</span>**で書こうとするとよくみんな困る
+**doPost**とか**doGet**の書き方はいざ**テスト**で書こうとするとよくみんな困る
 エクリプスにやらせちゃってるから
 
 ### doGet
@@ -444,9 +444,9 @@ WebContentとかはサーバーにある
 
 ```<% @page language="java"```
 
-ここ(<%@)の次の単語が何か)の部分の穴埋め問題が**<span style="color: red; ">テスト</span>**で出そう
+ここ(<%@)の次の単語が何か)の部分の穴埋め問題が**テスト**で出そう
 
-ここから先は全部**<span style="color: red; ">テスト</span>**に出そう
+ここから先は全部**テスト**に出そう
 
 **db.commit();**で反映
 
@@ -456,12 +456,12 @@ WebContentとかはサーバーにある
 
 context.xmlの中の**<Resourceタグ**を複数用意して名前を変えれば複数のDBにつなげられる
 
-**LIMIT**が**<span style="color: blue; ">取得件数</span>**
-**OFFSET**が**<span style="color: blue; ">ないと先頭から</span>**取得してくる
-**OFFSET**が**<span style="color: blue; ">あったらずらして</span>**取得してくる
+**LIMIT**が**取得件数**
+**OFFSET**が**ないと先頭から**取得してくる
+**OFFSET**が**あったらずらして**取得してくる
 
 
-**prepareStatement**すると**PreparedStatement**で**<span style="color: blue; ">返ってくる</span>**
+**prepareStatement**すると**PreparedStatement**で**返ってくる**
 **プリペアステートメント**すると**プリペアドステートメント**
 
 **ResultSet**
@@ -469,20 +469,20 @@ rs
 **リザルトセット
 結果セット**
 結果を保持してる
-**<span style="color: blue; ">主にSELECT文の時に使う</span>**
+**主にSELECT文の時に使う**
 
-**list**は**<span style="color: blue; ">add</span>**
-**map**は**<span style="color: blue; ">put</span>**
+**list**は**add**
+**map**は**put**
 
 ```("SELECT * FROM stock WHERE code LIKE ? LIMIT ? OFFSET ?")```
 
-**LIKE**は**<span style="color: blue; ">あいまい検索</span>**
+**LIKE**は**あいまい検索**
 **ps.setString(1, code+"%");**
-は**<span style="color: blue; ">前方一致</span>**
+は**前方一致**
 
 **SELECTほしいものFROMテーブル名**
 
-**<span style="color: red; ">テスト</span>**に直結してる
+**テスト**に直結してる
 
 ```"SELECT count(*) AS total FROM stocks"```
 **<span style="color: blue; ">集計関数</span>** ```count(*)```
@@ -491,7 +491,7 @@ rs
 
 
 **<%=code %>**
-**<span style="color: blue; ">式</span>**
+**式**
 System.out.printを意識する
 
 **jyan.setWin(jyan.getWin()+1);**
