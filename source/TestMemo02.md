@@ -238,160 +238,160 @@ s.replaceAll("[beh]","X");
 
 
 **request.setCharacterEncoding("UTF-8");**
-も、**<span style="color: red; ">テスト</span>**で書かせると
-Enco**<span style="color: red; ">r</span>**ding になってることが多いから気を付けて
+も、**テスト**で書かせると
+Enco**r**ding になってることが多いから気を付けて
 code(コード)だから
 
 Q4を最大値を求めるメソッドとしてメモる
 
 ## 乱数[(乱数の求め方)](https://notepm.jp/sharing/162f015e-4330-4333-95a4-c1e91d17b6fe)
-１～５だとするなら大きいほうから小さいほうを引いて１を足したものが個数
+１～５だとするなら大きいほうから小さいほうを引いて１を足したものが個数  
 
 
 
-**逆順**も**乱数**もまた**<span style="color: red; ">テスト</span>**にでる
-乱数は次間違えたら大変なことになる
+**逆順**も**乱数**もまた**テスト**にでる  
+乱数は次間違えたら大変なことになる  
 
 
 ## GET通信・POST通信
-**ブラウザから入力してする通信はGET通信**
-**リンクを踏んで飛んでいくとかもGET通信**
-
-**計算の結果をリクエストする通信は
-POST通信**
-
-**GET通信**と**POST通信**の**大きな違い**は
-**GET通信**だと送った内容が見える(**URLに表示される**)
-表示されててほしいときはリンクに飛ばせたい時(飛びたい時)とか
-
-**<a href=""></a>**
-これが何通信かわからないと処理できない
-**リンクだからGET通信**
-
-**今できるPOST通信はformからmethod="post"としたときだけ**
-
-**リクエストで飛んでくるものは何を入れてもString**
-
+**ブラウザから入力してする通信はGET通信**  
+**リンクを踏んで飛んでいくとかもGET通信**  
+  
+**計算の結果をリクエストする通信は  
+POST通信**  
+  
+**GET通信**と**POST通信**の**大きな違い**は  
+**GET通信**だと送った内容が見える(**URLに表示される**)  
+表示されててほしいときはリンクに飛ばせたい時(飛びたい時)とか  
+  
+**<a href=""></a>**  
+これが何通信かわからないと処理できない  
+**リンクだからGET通信**  
+  
+**今できるPOST通信はformからmethod="post"としたときだけ**  
+  
+**リクエストで飛んでくるものは何を入れてもString**  
+  
 ## ファイルの読み書き
-ファイル読み込みの記述は暗記するだけ
-**読み込みしたい時**は**fis**
-**書きたい時**は**fos**
+ファイル読み込みの記述は暗記するだけ  
+**読み込みしたい時**は**fis**  
+**書きたい時**は**fos**  
 
 ### fis
-**FileInputStream fis=new FileInputStream("./kaikei.txt");**
-どのファイルを読み込むか
-**InputStreamReader isr = new InputStreamReader(fis,"utf-8");**
-上の読み込みだと効率が悪いから、ラッピングする
-文字コードを指定できる
-**br = new BufferedReader(isr);**
-上の読み込みだと効率が悪いから、三段ラッピング
-
+**FileInputStream fis=new FileInputStream("./kaikei.txt");**  
+どのファイルを読み込むか  
+**InputStreamReader isr = new InputStreamReader(fis,"utf-8");**  
+上の読み込みだと効率が悪いから、ラッピングする  
+文字コードを指定できる  
+**br = new BufferedReader(isr);**  
+上の読み込みだと効率が悪いから、三段ラッピング  
+  
 ```
 BufferedReader br=null;
 FileInputStream fis=new FileInputStream(path);
 InputStreamReader isr=new InputStreamReader(fis,"UTF-8");
 br=new BufferedReader(isr);
 ```
-
-**鉛筆で書ける必要性がある**
-つまり**テスト**に出る
+  
+**鉛筆で書ける必要性がある**  
+つまり**テスト**に出る  
 
 ### fos
-**FileOutputStream fos=new FileOutputStream("./kaikei.txt");**
-**OutputStreamWriter osw=new OutputStreamWriter(fos,"utf-8");**
-**PrintWriter pw = new PrintWriter(osw);**
+**FileOutputStream fos=new FileOutputStream("./kaikei.txt");**  
+**OutputStreamWriter osw=new OutputStreamWriter(fos,"utf-8");**  
+**PrintWriter pw = new PrintWriter(osw);**  
 　
-**FileOutputStream fos=new FileOutputStream("./ssss.txt",true);**
-アペンドトゥルーにすると**追記**になる
-そのままだと上書き
+**FileOutputStream fos=new FileOutputStream("./ssss.txt",true);**  
+アペンドトゥルーにすると**追記**になる  
+そのままだと上書き  
+  
+**br.readLine()**  
+1行ずつ読み込んでいく  
+1行あれば読み込んでなければnullを返す  
 
-**br.readLine()**
-1行ずつ読み込んでいく
-1行あれば読み込んでなければnullを返す
-
-
+  
 
 ---
 
-
-サーブレットの
-**@WebServlet("ここ")**　を**Index.html**にしたら**Index.html**を呼んでくれる
-
-**request.getParameter()**
-は、**テスト**に99%出てくる
-ほぼ書かされる
-サーバーサイドで値をとってくるのは重要
-
-**getParameter**だと**文字列を返す**
-**getAttribute**だと**Object型**、**だからダウンキャスト**が必要
-
-**Implements**　とか
-**Serializable**　は
-**テスト**で出る
-これが書けないとコーディングが進まない
-
-**public boolean execute(User user){}**
-**public **は、**アクセス修飾子**
+  
+サーブレットの  
+**@WebServlet("ここ")**　を**Index.html**にしたら**Index.html**を呼んでくれる  
+  
+**request.getParameter()**  
+は、**テスト**に99%出てくる  
+ほぼ書かされる  
+サーバーサイドで値をとってくるのは重要  
+  
+**getParameter**だと**文字列を返す**  
+**getAttribute**だと**Object型**、**だからダウンキャスト**が必要  
+  
+**Implements**　とか  
+**Serializable**　は  
+**テスト**で出る  
+これが書けないとコーディングが進まない  
+  
+**public boolean execute(User user){}**  
+**public **は、**アクセス修飾子**  
 **boolean** は、**戻り値**  
 これも**テスト**で出そう  
-
-**HttpSession session=request.getSession();
-session.setAttribute("login",user);**
-**テスト**に出るとしか思えない
-補完できないから**HttpSession**が書けないと
-**Attribute**も
-
-**ServletContext application=this.getServletContext();**
-**アプリケーションスコープ**を使うために**ServletContext**のインスタンスを作っている
-acとかじゃなく**application**にしてるのはJSPで暗黙で用意されてる変数名がapplicationだから、
-同じにしている
-**ServletContext** は覚えなきゃいけない
-これも**テスト**に出そう
-
-**スコープは**
-**setAttribute()** で**セット**して
-**getAttribute()** で**ゲット**する
-
-取得を試みて
-あったら返ってくるし、なかったらnullが返ってくる
-大事な性質
-nullなら作る
-
-**if(loginUser==null){
-response.setRedirect("/docoTsubu");
-}**
-は、ログインせずにURLの直接飛んできたときにダメとする仕組み
-URLを直接入力で来た場合、**リダイレクト**で飛ばされる
-
-WEB-INFに入ってると直接リクエストできない
-入ってないと直接アクセスできてしまう
-
-**request.setCharacterEncoding("UTF-8");**
-**Encoding** はｒがない
-テストにでるかも？
-En code と ingで覚えるといいかもと思った
-
-**session.invalidate();**
-※スコープ自体が破棄され、保存していたすべてのインスタンスが消滅する。
-これも**テスト**に出うる
-
-**String[] data=csv.split(",",-1);**
--1してないときは、hoge,fuga,空文字,barだけ。末尾のカンマは無視
-**-1すると,,だけの空文字でも要素にしてくれる**
-データがそろってない時などに重宝する
+  
+**HttpSession session=request.getSession();  
+session.setAttribute("login",user);**  
+**テスト**に出るとしか思えない  
+補完できないから**HttpSession**が書けないと  
+**Attribute**も  
+  
+**ServletContext application=this.getServletContext();**  
+**アプリケーションスコープ**を使うために**ServletContext**のインスタンスを作っている  
+acとかじゃなく**application**にしてるのはJSPで暗黙で用意されてる変数名がapplicationだから、  
+同じにしている  
+**ServletContext** は覚えなきゃいけない  
+これも**テスト**に出そう  
+  
+**スコープは**  
+**setAttribute()** で**セット**して  
+**getAttribute()** で**ゲット**する  
+  
+取得を試みて  
+あったら返ってくるし、なかったらnullが返ってくる  
+大事な性質  
+nullなら作る  
+  
+**if(loginUser==null){  
+response.setRedirect("/docoTsubu");  
+}**  
+は、ログインせずにURLの直接飛んできたときにダメとする仕組み  
+URLを直接入力で来た場合、**リダイレクト**で飛ばされる  
+  
+WEB-INFに入ってると直接リクエストできない  
+入ってないと直接アクセスできてしまう  
+  
+**request.setCharacterEncoding("UTF-8");**  
+**Encoding** はｒがない  
+テストにでるかも？  
+En code と ingで覚えるといいかもと思った  
+  
+**session.invalidate();**  
+※スコープ自体が破棄され、保存していたすべてのインスタンスが消滅する。  
+これも**テスト**に出うる  
+  
+**String[] data=csv.split(",",-1);**  
+-1してないときは、hoge,fuga,空文字,barだけ。末尾のカンマは無視  
+**-1すると,,だけの空文字でも要素にしてくれる**  
+データがそろってない時などに重宝する  
 
 ---
 
 
 ### [練習5−1](https://96neko.notepm.jp/page/5c752cf963?s=%E3%83%86%E3%82%B9%E3%83%88#%E7%B7%B4%E7%BF%925-1)　[(練習5−1の解答)](https://96neko.notepm.jp/page/5c752cf963?s=%E3%83%86%E3%82%B9%E3%83%88#%E7%B7%B4%E7%BF%925-1%E3%81%AE%E8%A7%A3%E7%AD%94) 
 
-
+  
 
 ---
 
-
-**doPost**とか**doGet**の書き方はいざ**テスト**で書こうとするとよくみんな困る
-エクリプスにやらせちゃってるから
+  
+**doPost**とか**doGet**の書き方はいざ**テスト**で書こうとするとよくみんな困る  
+エクリプスにやらせちゃってるから  
 
 ### doGet
 ```doGet
@@ -409,15 +409,15 @@ RequestDispatcher dispatcher=request.getRequestDispatcher("");
 dispatcher.forward(request,response);
 ※「javax.servlet.RequestDispatcher」をインポートする必要がある
 ```
-**穴をあけてくださいと言わんばかり**
+**穴をあけてくださいと言わんばかり**  
 
-```ps = db.prepareStatement("SELECT * FROM lunches");```
-
-プリペアは準備
-これで準備された
-**SELECT文は結果が欲しいから用意する**
-**rs = ps.executeQuery();**
-これで実際に**SQLを実行**
+```ps = db.prepareStatement("SELECT * FROM lunches");```  
+  
+プリペアは準備  
+これで準備された  
+**SELECT文は結果が欲しいから用意する**  
+**rs = ps.executeQuery();**  
+これで実際に**SQLを実行**  
 
 ```
 while (rs.next()) {
@@ -428,83 +428,83 @@ Lunch l = new Lunch(id, name, menu);
 list.add(l);
 }
 ```
+  
+**rs.next()**  
+次の行があるか？ということ  
+あればtrueを返して、ポイントを最初のレコードに移動  
+  
+これでインスタンスを作る情報がそろったから、  
+ひとつひとつインスタンスを作っていく  
 
-**rs.next()**
-次の行があるか？ということ
-あればtrueを返して、ポイントを最初のレコードに移動
+  
 
-これでインスタンスを作る情報がそろったから、
-ひとつひとつインスタンスを作っていく
+**application.getRealPath()**  
+WebContentとかはサーバーにある  
+**application.getRealPathでサーバーの本当のパスを教えてくれる**  
 
+```<% @page language="java"```  
+  
+ここ(<%@)の次の単語が何か)の部分の穴埋め問題が**テスト**で出そう  
+  
+ここから先は全部**テスト**に出そう  
+  
+**db.commit();**で反映  
+  
+4000件書き込んでる途中に問題が起きた場合は、db.commit();せずに例外処理に行って終わり  
+その場合メモリに書き込まれてるから中途半端なデータが書き込まれてるとかもない  
+4000件OKだった場合にdb.commit();される  
+  
+context.xmlの中の**<Resourceタグ**を複数用意して名前を変えれば複数のDBにつなげられる  
+  
+**LIMIT**が**取得件数**  
+**OFFSET**が**ないと先頭から**取得してくる  
+**OFFSET**が**あったらずらして**取得してくる  
+  
 
+**prepareStatement**すると**PreparedStatement**で**返ってくる**  
+**プリペアステートメント**すると**プリペアドステートメント**  
+  
+**ResultSet**  
+rs  
+**リザルトセット  
+結果セット**  
+結果を保持してる  
+**主にSELECT文の時に使う**  
+  
+**list**は**add**  
+**map**は**put**  
 
-**application.getRealPath()**
-WebContentとかはサーバーにある
-**application.getRealPathでサーバーの本当のパスを教えてくれる**
+```("SELECT * FROM stock WHERE code LIKE ? LIMIT ? OFFSET ?")```  
+  
+**LIKE**は**あいまい検索**  
+**ps.setString(1, code+"%");**  
+は**前方一致**  
+  
+**SELECTほしいものFROMテーブル名**  
+  
+**テスト**に直結してる  
+  
+```"SELECT count(*) AS total FROM stocks"```  
+**集計関数** ```count(*)```  
+何件の結果があったか  
 
-```<% @page language="java"```
+  
 
-ここ(<%@)の次の単語が何か)の部分の穴埋め問題が**テスト**で出そう
-
-ここから先は全部**テスト**に出そう
-
-**db.commit();**で反映
-
-4000件書き込んでる途中に問題が起きた場合は、db.commit();せずに例外処理に行って終わり
-その場合メモリに書き込まれてるから中途半端なデータが書き込まれてるとかもない
-4000件OKだった場合にdb.commit();される
-
-context.xmlの中の**<Resourceタグ**を複数用意して名前を変えれば複数のDBにつなげられる
-
-**LIMIT**が**取得件数**
-**OFFSET**が**ないと先頭から**取得してくる
-**OFFSET**が**あったらずらして**取得してくる
-
-
-**prepareStatement**すると**PreparedStatement**で**返ってくる**
-**プリペアステートメント**すると**プリペアドステートメント**
-
-**ResultSet**
-rs
-**リザルトセット
-結果セット**
-結果を保持してる
-**主にSELECT文の時に使う**
-
-**list**は**add**
-**map**は**put**
-
-```("SELECT * FROM stock WHERE code LIKE ? LIMIT ? OFFSET ?")```
-
-**LIKE**は**あいまい検索**
-**ps.setString(1, code+"%");**
-は**前方一致**
-
-**SELECTほしいものFROMテーブル名**
-
-**テスト**に直結してる
-
-```"SELECT count(*) AS total FROM stocks"```
-**<span style="color: blue; ">集計関数</span>** ```count(*)```
-何件の結果があったか
-
-
-
-**<%=code %>**
-**式**
-System.out.printを意識する
-
-**jyan.setWin(jyan.getWin()+1);**
-これはイデオム的な書き方
-教科書にも昔乗ってたお手本的な書き方
-これで１セットしていける
-**getWin()までが評価されてるから＋１できる**
+**<%=code %>**  
+**式**  
+System.out.printを意識する  
+  
+**jyan.setWin(jyan.getWin()+1);**  
+これはイデオム的な書き方  
+教科書にも昔乗ってたお手本的な書き方  
+これで１セットしていける  
+**getWin()までが評価されてるから＋１できる**  
 
 ---
 
 
 ### 練習2-1の解答例
-(1)Webサーバ　(2)URL　(3)リクエスト
-(4)と(5)(順不同)GETリクエスト、POSTリクエスト　(6)レスポンス
-(7)Content-Typeヘッダ　(8)HTTP　(9)(Web)アプリケーションサーバ
-(10)サーブレット　(11)サーブレットコンテナ　(12)JSP
+(1)Webサーバ　(2)URL　(3)リクエスト  
+(4)と(5)(順不同)GETリクエスト、POSTリクエスト　(6)レスポンス  
+(7)Content-Typeヘッダ　(8)HTTP　(9)(Web)アプリケーションサーバ  
+(10)サーブレット　(11)サーブレットコンテナ　(12)JSP  
