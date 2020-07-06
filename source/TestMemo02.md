@@ -185,7 +185,7 @@ s.replaceAll("[beh]","X");
 　Javaによるサーバーサイドプログラムには[( 12 )]というものがあるが、これは[( 10 )]に変換され、最終的には同じものとなる。  
 
 
-**[練習2-1の解答例](https://96neko.notepm.jp/page/f54c9323e9#%E7%B7%B4%E7%BF%922-1%E3%81%AE%E8%A7%A3%E7%AD%94%E4%BE%8B)**
+**[練習2-1の解答例](https://github.com/instantheaven/boilerplate/blob/master/source/Answer2-1.md)**
 
 ---
 
