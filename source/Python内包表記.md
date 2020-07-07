@@ -27,4 +27,4 @@ matrix=[[1 if i==j else 0 for j in range(col)] for i in range(row)]
   
 ---
   
-参照元[Python リスト内包表記まとめ](https://qiita.com/mjpurin/items/ec6d115b4ff13d36b6b7)
+参照元 [Python リスト内包表記まとめ](https://qiita.com/mjpurin/items/ec6d115b4ff13d36b6b7)
