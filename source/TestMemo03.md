@@ -24,7 +24,7 @@ JavaScriptとPython
 
 [Webサイト制作-7日目(JavaScript)](https://github.com/instantheaven/boilerplate/blob/master/source/JavaScript03.md)
 
-[Day55](https://96neko.notepm.jp/page/4b80bd0cb8?s=JavaScript)
+[Day55](https://github.com/instantheaven/boilerplate/blob/master/source/JavaScript04.md)
 
 [Day58](https://96neko.notepm.jp/page/57370e3984?s=JavaScript)
 
