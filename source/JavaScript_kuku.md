@@ -79,4 +79,4 @@ html
 ```
   
   
-参照元[ジョイタスネット](https://joytas.net/programming/afternoon_js_ninenine)
+参照及び引用元 [ジョイタスネット](https://joytas.net/programming/afternoon_js_ninenine)
