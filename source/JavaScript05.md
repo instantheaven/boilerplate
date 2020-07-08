@@ -17,7 +17,7 @@ console.dir(ele);で見ると上みたいにずらっとあるのが見える
 ---
 
 
-**[Webサイト制作-9日目(JavaScript)](https://joytas.net/programming/website/website09)**
+**[Webサイト制作-9日目(JavaScript)](https://github.com/instantheaven/boilerplate/blob/master/source/JavaScript06.md)**  
 jsLesson11.html  
   
 onloadプロパティ  
