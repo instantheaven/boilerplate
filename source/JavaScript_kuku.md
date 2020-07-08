@@ -1,6 +1,5 @@
 # JavaScriptで九九の作成
 
-<img src='https://96neko.notepm.jp/private/58cd9068-c16f-11ea-a231-060d7c3d0460.png' title='99.png' width='400'>
   
 html
 ```html
