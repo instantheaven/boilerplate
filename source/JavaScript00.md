@@ -1,3 +1,4 @@
+# JavaScript00
 ### ちょっとしたHTML・CSS・JS
 エンジンかかるまで  
 **復習**  
@@ -158,7 +159,7 @@ JSでカウント変数を用意する
   
 
 
-### [午後のJS（九九表作成)](https://joytas.net/programming/afternoon_js_ninenine)
+### [午後のJS（九九表作成)](https://github.com/instantheaven/boilerplate/blob/master/source/JavaScript_kuku.md)
 
 またsite2をコピーしてsite3を作って移動してindex.htmlを開く  
   
