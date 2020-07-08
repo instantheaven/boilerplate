@@ -2,8 +2,9 @@
 
 **MySQLとサーバーサイド・データベースの接続**
 
-**[テスト前に確認しておきたいメモ①](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo01.md)**
-
+**[1回目のテスト用の確認まとめ](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo01.md)**  
+**[3回目のテスト用の確認まとめ](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo03.md)**  
+**[4回目のテスト用の確認まとめ](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo04.md)** 
 2/15〜3/11までの分を以下にまとめ
 
 # SQL [(SQL基本)](https://github.com/instantheaven/boilerplate/blob/master/source/sql_memo01.md)
