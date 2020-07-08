@@ -25,7 +25,7 @@ unshiftは先頭に
 
   
 
-# [JSP & Servlet-14日目(英和辞書アプリの作成1)](https://joytas.net/programming/jspservlet14)
+# [JSP & Servlet-14日目(英和辞書アプリの作成1)](https://github.com/instantheaven/boilerplate/blob/master/source/JavaScript_Jisho.md)
 
 
 英単語と意味が**タブ**区切りで並ぶ**TSV**ファイルであることがわかる。  
