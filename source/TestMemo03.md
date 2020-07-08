@@ -10,23 +10,16 @@ JavaScriptとPython
 
 # [Day71 JavaScript](https://github.com/instantheaven/boilerplate/blob/master/source/JavaScript01.md)
 # [Day72 Python](https://github.com/instantheaven/boilerplate/blob/master/source/Python01.md)
-# [Day73 Python](https://joytas.net/%e8%a8%93%e7%b7%b4/day73)
+# [Day73 Python](https://github.com/instantheaven/boilerplate/blob/master/source/Python02.md)
 
-# [内包表記](https://96neko.notepm.jp/page/93c71c82a3?s=%E3%83%86%E3%82%B9%E3%83%88)
+# [内包表記](https://github.com/instantheaven/boilerplate/blob/master/source/Python%E5%86%85%E5%8C%85%E8%A1%A8%E8%A8%98.md)
 
-[Python リスト内包表記まとめ](https://qiita.com/mjpurin/items/ec6d115b4ff13d36b6b7)
-
-# [教科書P237　練習問題](https://96neko.notepm.jp/page/8528d68339?s=%E3%83%86%E3%82%B9%E3%83%88#%E7%B7%B4%E7%BF%92%E5%95%8F%E9%A1%8C)
-
-練習5-3は**<span style="color: #d32f2f; ">テスト</span>**に出るかも
-
-# [乱数の求め方](https://96neko.notepm.jp/page/4f1b5404ef?s=%E4%B9%B1%E6%95%B0)
 **JavaScript**
 １〜１００の数字
 ```const ans=Math.floor(Math.random()*100)+1;```
-# [JavaScript](https://96neko.notepm.jp/page/47a5739780?s=JavaScript)
+# [JavaScript](https://github.com/instantheaven/boilerplate/blob/master/source/JavaScript00.md)
 
-[Day56](https://96neko.notepm.jp/page/e19660bc12?s=JavaScript)
+[Day56](https://github.com/instantheaven/boilerplate/blob/master/source/JavaScript02.md)
 
 
 [Webサイト制作-7日目(JavaScript)](https://96neko.notepm.jp/page/4190ed1e70?s=JavaScript#ahref'https:joytasnetprogrammingwebsitewebsite07'rel'noreferrer'target'_blank'Web%E3%82%B5%E3%82%A4%E3%83%88%E5%88%B6%E4%BD%9C-7%E6%97%A5%E7%9B%AEJavaScripta)
