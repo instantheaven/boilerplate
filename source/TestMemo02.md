@@ -191,7 +191,7 @@ s.replaceAll("[beh]","X");
 ---
 
 
-**request.getParamater()**は絶対テストに出る
+**request.getParamater()** は絶対テストに出る
 中身がなかったときはnullになる
 
 
