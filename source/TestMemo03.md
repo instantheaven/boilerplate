@@ -4,7 +4,7 @@ JavaScriptとPython
 
 **[1回目のテスト用の確認まとめ](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo01.md)**  
 **[2回目のテスト用の確認まとめ](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo02.md)**  
-**[４回目のテスト用の確認まとめ](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo04.md)**  
+**[4回目のテスト用の確認まとめ](https://github.com/instantheaven/boilerplate/blob/master/source/TestMemo04.md)**  
 
 3/12〜まとめ
 
